@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -360,7 +360,7 @@
     /* ─────────────────────────────────────────
        BENEFITS
     ───────────────────────────────────────── */
-    .bene { padding:96px 0; background:#FFFBEE; }
+    .bene { padding:96px 0; background:var(--white); }
     .bene__body {
       display:grid; grid-template-columns:1.2fr 1fr;
       gap:60px; align-items:stretch; margin-top:44px;
@@ -408,11 +408,11 @@
     /* ─────────────────────────────────────────
        PLANS
     ───────────────────────────────────────── */
-    .plans { padding:96px 0; background:var(--g-xlight); }
+    .plans { padding:96px 0; background:var(--yellow); }
     .plans__hd { text-align:center; margin-bottom:10px; }
     .plans__sub {
       text-align:center; max-width:580px; margin:0 auto 52px;
-      font-size:1rem; color:var(--gray-m); line-height:1.7;
+      font-size:1rem; color:var(--gray-d); line-height:1.7;
     }
     .plans__grid {
       display:grid; grid-template-columns:1fr 1fr;
@@ -470,7 +470,7 @@
     /* ─────────────────────────────────────────
        TESTIMONIALS
     ───────────────────────────────────────── */
-    .testi { padding:88px 0; background:var(--g-darker); }
+    .testi { padding:88px 0; background:var(--black); }
     .testi .sec-title { color:#fff; }
     .testi .sec-title span { color:var(--yellow); }
     .testi .sec-sub { color:rgba(255,255,255,.6); }
@@ -501,7 +501,7 @@
     ───────────────────────────────────────── */
     .cta-fin {
       padding:96px 0;
-      background:linear-gradient(135deg,var(--g-darker) 0%,var(--g-dark) 50%,var(--g) 100%);
+      background:var(--yellow);
       position:relative; overflow:hidden;
     }
     .cta-fin::before {
@@ -512,15 +512,15 @@
     .cta-fin__inner { text-align:center; position:relative; z-index:1; }
     .cta-fin__t {
       font-size:clamp(1.8rem,4vw,3rem); font-weight:900;
-      color:#fff; line-height:1.2; margin-bottom:14px;
+      color:var(--g-dark); line-height:1.2; margin-bottom:14px;
     }
-    .cta-fin__p { font-size:1.05rem; color:rgba(255,255,255,.82); margin-bottom:38px; }
+    .cta-fin__p { font-size:1.05rem; color:var(--gray-d); margin-bottom:38px; }
     .cta-fin__btns { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
 
     /* ─────────────────────────────────────────
        FOOTER
     ───────────────────────────────────────── */
-    .footer { background:#0a1f05; padding:60px 0 28px; color:rgba(255,255,255,.65); }
+    .footer { background:var(--black); padding:60px 0 28px; color:rgba(255,255,255,.65); }
     .footer__grid {
       display:grid; grid-template-columns:2fr 1fr 1fr 1fr;
       gap:44px; margin-bottom:44px;
@@ -573,31 +573,51 @@
       .hero__p { margin-left:auto; margin-right:auto; }
       .hero__btns { justify-content:center; }
       .hero__stats { justify-content:center; }
-      .hero__img { width:300px; }
+      .hero__img { width:300px; max-width:80vw; }
       .chip-1 { right:0; }
       .chip-2 { left:0; }
-      .about__grid { grid-template-columns:1fr; gap:44px; }
+      .about__cards { grid-template-columns:1fr 1fr; }
       .footer__grid { grid-template-columns:1fr 1fr; gap:28px; }
+      .bene__body { gap:36px; }
     }
     @media(max-width:768px){
       .nav__links, .nav__cta { display:none; }
       .nav__ham { display:flex; }
       .bene__body { grid-template-columns:1fr; }
+      .bene__img { order:1; }
+      .bene__img img { min-height:260px; height:260px; }
+      .bene__content { order:2; }
       .how__row-top { flex-direction:column; align-items:center; }
       .how__row-bot .how__step, .how__step { max-width:100%; }
       .how__steps { grid-template-columns:1fr; }
       .how__step:last-child { grid-column:1; max-width:100%; }
       .bpanel.active { grid-template-columns:1fr; }
+      .about__cards { grid-template-columns:1fr; }
       .plans__grid { grid-template-columns:1fr; }
       .testi__grid { grid-template-columns:1fr; }
       .footer__grid { grid-template-columns:1fr; }
       .footer__bottom { flex-direction:column; text-align:center; }
       .cta-fin__btns { flex-direction:column; align-items:center; }
+      .hero__visual { min-height:300px; }
+      .hero__glow { width:320px; height:320px; }
+      .plans__commit { padding:24px 20px; }
     }
     @media(max-width:480px){
       .hero__btns { flex-direction:column; align-items:center; }
       .hero__btns .btn { width:100%; justify-content:center; }
-      .plans__commit { padding:24px 20px; }
+      .chip-1, .chip-2 { display:none; }
+      .hero__img { width:200px; }
+      .hero__speed { display:none; }
+      .container { padding:0 14px; }
+      .hero { padding-top:72px; }
+      .hero__grid { padding:52px 0; }
+      .about, .how, .bene, .plans, .testi, .cta-fin { padding:64px 0; }
+      .sec-title { font-size:clamp(1.5rem,7vw,2.2rem); }
+      .plans__commit { padding:20px 16px; }
+      .bene__tabs { flex-wrap:wrap; }
+      .btab { flex:1 1 auto; text-align:center; }
+      .pcard { padding:28px 20px; }
+      .footer { padding:48px 0 20px; }
     }
   </style>
 </head>
@@ -613,7 +633,7 @@
   <div class="container">
     <div class="nav__inner">
       <a href="#inicio" class="nav__logo">
-        <img src="imagenes/logo-deycoop.jpeg" alt="Delycoop – Cooperativa de Delivery" />
+        <img src="imagenes/logo-sin-fondo.png" alt="Delycoop – Cooperativa de Delivery" />
       </a>
       <ul class="nav__links">
         <li><a href="#inicio">Inicio</a></li>
@@ -685,15 +705,7 @@
         <div class="hero__speed">
           <span></span><span></span><span></span><span></span><span></span>
         </div>
-        <img src="imagenes/logo-deycoop.jpeg" alt="Mascota Delycoop en go-kart" class="hero__img" />
-        <div class="hero__chip chip-1">
-          <div style="font-size:.68rem;color:var(--gray-m);font-weight:600;">Tiempo promedio</div>
-          <div style="color:var(--g-dark);font-weight:900;font-size:.97rem;">30 minutos</div>
-        </div>
-        <div class="hero__chip chip-2">
-          <div style="font-size:.68rem;color:var(--gray-m);font-weight:600;">Cobertura</div>
-          <div style="color:var(--black);font-weight:900;font-size:.97rem;">100% Segura</div>
-        </div>
+        <img src="imagenes/logo-sin-fondo.png" alt="Logo Delycoop" class="hero__img" />
       </div>
     </div>
   </div>
@@ -915,8 +927,8 @@
       <h2 class="cta-fin__t">Líderes en logística cooperativa.<br>Sumate hoy.</h2>
       <p class="cta-fin__p">Rápido, eficiente y justo para todos. Unite a la comunidad Delycoop.</p>
       <div class="cta-fin__btns">
-        <a href="#" class="btn btn-white">Soy un Comercio</a>
-        <a href="#" class="btn btn-outline-w">Soy un Repartidor</a>
+        <a href="#" class="btn btn-dark">Soy un Comercio</a>
+        <a href="#" class="btn btn-outline">Soy un Repartidor</a>
       </div>
     </div>
   </div>
@@ -929,7 +941,7 @@
   <div class="container">
     <div class="footer__grid">
       <div>
-        <img src="logo.png" alt="Delycoop" class="footer__logo" />
+        <img src="imagenes/logo-sin-fondo.png" alt="Delycoop" class="footer__logo" />
         <p class="footer__desc">Llevamos tus pedidos a la puerta de tus clientes. Cuidamos cada entrega porque valoramos a quienes la hacen posible.</p>
         <div class="footer__social">
           <a href="#" aria-label="Facebook"></a>
