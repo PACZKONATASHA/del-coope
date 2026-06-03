@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sumá tu comercio a Delycoop. Sin abonos fijos, sin porcentajes. Pagás solo por cada envío realizado." />
+  <title>Sumá tu Comercio – Delycoop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --g:        #779C22;
+      --g-dark:   #4E6B15;
+      --g-darker: #2A3A08;
+      --g-light:  #EEF5D4;
+      --black:    #111111;
+      --gray-d:   #333333;
+      --gray-m:   #666666;
+      --gray-l:   #f4f4f4;
+      --white:    #ffffff;
+      --yellow:   #f5c518;
+      --font:     'Nunito', sans-serif;
+      --ease:     all .3s cubic-bezier(.4,0,.2,1);
+      --r-sm: 8px; --r-md: 16px; --r-lg: 24px;
+      --sh-sm: 0 2px 10px rgba(0,0,0,.07);
+      --sh-md: 0 6px 24px rgba(0,0,0,.11);
+    }
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { font-family:var(--font); color:var(--gray-d); background:var(--white); line-height:1.6; overflow-x:hidden; }
+    a { text-decoration:none; color:inherit; }
+    ul { list-style:none; }
+    img { max-width:100%; height:auto; display:block; }
+    .container { width:100%; max-width:860px; margin:0 auto; padding:0 24px; }
+    .container--wide { max-width:1200px; }
+
+    /* ── NAV ── */
+    .nav {
+      position:fixed; top:0; left:0; right:0; z-index:1000;
+      background:rgba(255,255,255,.95);
+      backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+      border-bottom:1px solid rgba(119,156,34,.12);
+      box-shadow:0 2px 12px rgba(0,0,0,.07);
+    }
+    .nav__inner { display:flex; align-items:center; justify-content:space-between; height:72px; }
+    .nav__logo img { height:48px; width:auto; }
+    .nav__back {
+      display:inline-flex; align-items:center; gap:7px;
+      font-size:.9rem; font-weight:800; color:var(--gray-d);
+      transition:var(--ease); padding:8px 18px; border-radius:100px;
+      border:2px solid var(--g-light);
+    }
+    .nav__back:hover { color:var(--g); border-color:var(--g); background:var(--g-light); }
+
+    /* ── HERO ── */
+    .hero {
+      padding:110px 0 64px;
+      background:var(--yellow);
+      text-align:center;
+    }
+    .hero__badge {
+      display:inline-flex; align-items:center; gap:8px;
+      background:var(--g); color:#fff;
+      padding:6px 18px; border-radius:100px;
+      font-size:.78rem; font-weight:900; text-transform:uppercase; letter-spacing:.08em;
+      margin-bottom:20px; box-shadow:0 4px 14px rgba(119,156,34,.38);
+    }
+    .hero h1 {
+      font-size:clamp(2rem,5vw,3.2rem); font-weight:900;
+      color:var(--black); line-height:1.15; margin-bottom:16px;
+    }
+    .hero h1 em { font-style:normal; color:var(--g-dark); }
+    .hero p { font-size:1.05rem; color:var(--gray-d); max-width:520px; margin:0 auto; line-height:1.7; }
+
+    /* ── BENEFITS STRIP ── */
+    .strip { background:var(--black); padding:52px 0; }
+    .strip__grid { display:grid; grid-template-columns:repeat(4,1fr); gap:0; }
+    .sitem {
+      text-align:center; padding:28px 18px;
+      border-right:1px solid rgba(255,255,255,.06);
+    }
+    .sitem:last-child { border-right:none; }
+    .sitem__ico { font-size:2.2rem; margin-bottom:10px; }
+    .sitem__t { font-size:.97rem; font-weight:900; color:#fff; margin-bottom:6px; }
+    .sitem__p { font-size:.82rem; color:rgba(255,255,255,.5); line-height:1.5; }
+
+    /* ── FORM SECTION ── */
+    .form-sec { padding:72px 0 96px; background:var(--white); }
+    .form-intro { text-align:center; margin-bottom:44px; }
+    .form-intro h2 { font-size:1.8rem; font-weight:900; color:var(--black); margin-bottom:8px; }
+    .form-intro h2 span { color:var(--g); }
+    .form-intro p { font-size:.97rem; color:var(--gray-m); }
+
+    .form-wrap {
+      background:#fff;
+      border:1.5px solid var(--g-light);
+      border-radius:var(--r-lg);
+      overflow:hidden;
+      box-shadow:var(--sh-md);
+    }
+    .form-block {
+      padding:36px 44px;
+      border-bottom:1.5px solid var(--g-light);
+    }
+    .form-block__t {
+      font-size:.85rem; font-weight:900; color:var(--black);
+      text-transform:uppercase; letter-spacing:.08em;
+      margin-bottom:26px;
+      display:flex; align-items:center; gap:10px;
+    }
+    .form-block__t::before {
+      content:''; width:4px; height:20px;
+      background:var(--g); border-radius:4px; flex-shrink:0;
+    }
+    .form-row {
+      display:grid; grid-template-columns:1fr 1fr;
+      gap:18px; margin-bottom:18px;
+    }
+    .form-row:last-child { margin-bottom:0; }
+    .form-row.full { grid-template-columns:1fr; }
+    .form-group { display:flex; flex-direction:column; gap:6px; }
+    .form-group label { font-size:.83rem; font-weight:800; color:var(--gray-d); }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding:12px 16px;
+      border:1.5px solid #e0e0e0;
+      border-radius:var(--r-sm);
+      font-family:var(--font); font-size:.95rem; color:var(--gray-d);
+      background:#fff; transition:var(--ease); outline:none;
+    }
+    .form-group textarea { resize:vertical; min-height:90px; }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color:var(--g); box-shadow:0 0 0 3px rgba(119,156,34,.12);
+    }
+    .req { color:var(--g-dark); }
+
+    /* modalidad tabs */
+    .modal-tabs { display:flex; gap:12px; }
+    .modal-tab {
+      flex:1; padding:16px 12px; border-radius:var(--r-md);
+      border:2px solid var(--g-light); background:#fff;
+      font-family:var(--font); font-size:.92rem; font-weight:800;
+      cursor:pointer; transition:var(--ease); text-align:center;
+      position:relative;
+    }
+    .modal-tab input[type="radio"] { position:absolute; opacity:0; width:0; height:0; }
+    .modal-tab:has(input:checked) { background:var(--g); border-color:var(--g); color:#fff; }
+    .modal-tab:hover:not(:has(input:checked)) { border-color:var(--g); color:var(--g); background:var(--g-light); }
+    .modal-tab__t { font-size:1rem; font-weight:900; display:block; margin-bottom:4px; }
+    .modal-tab__p { font-size:.78rem; font-weight:600; opacity:.75; display:block; }
+
+    /* submit */
+    .form-submit {
+      padding:36px 44px;
+      background:linear-gradient(135deg, var(--g-light) 0%, #f0f7d4 100%);
+      text-align:center;
+    }
+    .form-submit p { font-size:.88rem; color:var(--gray-m); margin-bottom:20px; line-height:1.6; }
+
+    .btn {
+      display:inline-flex; align-items:center; gap:8px;
+      padding:14px 38px; border-radius:100px;
+      font-family:var(--font); font-size:1rem; font-weight:900;
+      cursor:pointer; border:none; transition:var(--ease);
+    }
+    .btn-primary { background:var(--g); color:#fff; }
+    .btn-primary:hover { background:var(--g-dark); transform:translateY(-2px); box-shadow:0 6px 22px rgba(119,156,34,.42); }
+
+    /* ── FOOTER ── */
+    .footer { background:var(--black); padding:28px 0; }
+    .footer__inner {
+      display:flex; align-items:center; justify-content:space-between;
+      flex-wrap:wrap; gap:12px;
+    }
+    .footer__logo img { height:40px; }
+    .footer p { font-size:.8rem; color:rgba(255,255,255,.35); }
+    .footer span { color:var(--g); }
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:768px) {
+      .strip__grid { grid-template-columns:1fr 1fr; }
+      .sitem { border-right:none; border-bottom:1px solid rgba(255,255,255,.06); }
+      .form-row { grid-template-columns:1fr; }
+      .form-block { padding:24px 20px; }
+      .form-submit { padding:24px 20px; }
+      .modal-tabs { flex-direction:column; }
+    }
+    @media(max-width:480px) {
+      .strip__grid { grid-template-columns:1fr; }
+      .hero { padding:90px 0 44px; }
+      .form-intro h2 { font-size:1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="container container--wide">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="imagenes/logo-sin-fondo.png" alt="Delycoop" />
+      </a>
+      <a href="index.html" class="nav__back">← Volver al inicio</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__badge">🏪 Comercios</div>
+    <h1>Sumá tu Comercio a<br><em>la Red Cooperativa</em></h1>
+    <p>Sin abonos fijos ni porcentajes sobre tus ventas. Pagás únicamente por cada envío realizado. Completá el formulario y te contactamos.</p>
+  </div>
+</section>
+
+<!-- BENEFITS STRIP -->
+<div class="strip">
+  <div class="container container--wide">
+    <div class="strip__grid">
+      <div class="sitem">
+        <div class="sitem__ico">🚀</div>
+        <div class="sitem__t">Entregas rápidas</div>
+        <div class="sitem__p">Las más ágiles de la ciudad, con seguro incluido</div>
+      </div>
+      <div class="sitem">
+        <div class="sitem__ico">💵</div>
+        <div class="sitem__t">Cero costos fijos</div>
+        <div class="sitem__p">Solo pagás una tarifa plana por envío</div>
+      </div>
+      <div class="sitem">
+        <div class="sitem__ico">💬</div>
+        <div class="sitem__t">Atención directa</div>
+        <div class="sitem__p">Personas reales, sin bots, los 7 días</div>
+      </div>
+      <div class="sitem">
+        <div class="sitem__ico">📣</div>
+        <div class="sitem__t">Mayor visibilidad</div>
+        <div class="sitem__p">Difusión en redes y directorio de comercios</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FORM -->
+<section class="form-sec">
+  <div class="container">
+    <div class="form-intro">
+      <h2>Completá los datos de <span>tu comercio</span></h2>
+      <p>Revisamos tu solicitud y te contactamos por WhatsApp para coordinar el alta.</p>
+    </div>
+
+    <form class="form-wrap" action="#" method="post">
+
+      <!-- Datos del comercio -->
+      <div class="form-block">
+        <div class="form-block__t">Datos del Comercio</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nombre del comercio <span class="req">*</span></label>
+            <input type="text" name="nombre_comercio" placeholder="Ej: Panadería La Esperanza" required />
+          </div>
+          <div class="form-group">
+            <label>Rubro <span class="req">*</span></label>
+            <select name="rubro" required>
+              <option value="" disabled selected>Seleccioná un rubro</option>
+              <option>Panadería / Pastelería</option>
+              <option>Pizzería / Rotisería</option>
+              <option>Hamburguesería</option>
+              <option>Sushi / Cocina oriental</option>
+              <option>Heladería</option>
+              <option>Almacén / Minimarket</option>
+              <option>Farmacia</option>
+              <option>Indumentaria</option>
+              <option>Electrónica</option>
+              <option>Otro</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Dirección <span class="req">*</span></label>
+            <input type="text" name="direccion" placeholder="Calle, número, localidad" required />
+          </div>
+          <div class="form-group">
+            <label>CUIT / CUIL</label>
+            <input type="text" name="cuit" placeholder="Ej: 20-12345678-9" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Datos del responsable -->
+      <div class="form-block">
+        <div class="form-block__t">Datos del Responsable</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nombre completo <span class="req">*</span></label>
+            <input type="text" name="nombre" placeholder="Nombre y apellido" required />
+          </div>
+          <div class="form-group">
+            <label>DNI <span class="req">*</span></label>
+            <input type="text" name="dni" placeholder="Número de documento" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>WhatsApp <span class="req">*</span></label>
+            <input type="tel" name="whatsapp" placeholder="+54 9 11 0000-0000" required />
+          </div>
+          <div class="form-group">
+            <label>Email <span class="req">*</span></label>
+            <input type="email" name="email" placeholder="tu@email.com" required />
+          </div>
+        </div>
+      </div>
+
+      <!-- Operativa -->
+      <div class="form-block">
+        <div class="form-block__t">Información Operativa</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Horario de despacho <span class="req">*</span></label>
+            <input type="text" name="horario" placeholder="Ej: Lunes a sábado 10:00 – 22:00" required />
+          </div>
+          <div class="form-group">
+            <label>Zona de cobertura deseada</label>
+            <input type="text" name="zona" placeholder="Ej: Ituzaingó, Morón, Haedo" />
+          </div>
+        </div>
+        <div class="form-row full">
+          <div class="form-group">
+            <label>Envíos diarios estimados</label>
+            <select name="volumen">
+              <option value="" disabled selected>Seleccioná un rango</option>
+              <option>Menos de 10</option>
+              <option>10 a 30</option>
+              <option>30 a 60</option>
+              <option>Más de 60</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modalidad -->
+      <div class="form-block">
+        <div class="form-block__t">Modalidad de Pago</div>
+        <div class="modal-tabs">
+          <label class="modal-tab">
+            <input type="radio" name="modalidad" value="prepago" checked />
+            <span class="modal-tab__t">💳 Prepago</span>
+            <span class="modal-tab__p">Cargás saldo y se descuenta por envío</span>
+          </label>
+          <label class="modal-tab">
+            <input type="radio" name="modalidad" value="pospago" />
+            <span class="modal-tab__t">📅 Pospago</span>
+            <span class="modal-tab__p">Despachás y abonás semanal o quincenal</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Mensaje opcional -->
+      <div class="form-block">
+        <div class="form-block__t">Mensaje Adicional</div>
+        <div class="form-row full">
+          <div class="form-group">
+            <label>¿Algo que quieras contarnos? (opcional)</label>
+            <textarea name="mensaje" placeholder="Necesidades especiales, preguntas, o comentarios..."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <div class="form-submit">
+        <p>Al enviar tu solicitud nuestro equipo la revisará y te contactará por WhatsApp.<br>El proceso de alta demora menos de <strong>48 horas hábiles</strong>.</p>
+        <button type="submit" class="btn btn-primary">Enviar Solicitud →</button>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container container--wide">
+    <div class="footer__inner">
+      <a href="index.html" class="footer__logo">
+        <img src="imagenes/logo-sin-fondo.png" alt="Delycoop" />
+      </a>
+      <p>© 2026 <span>Delycoop</span> – Cooperativa de Delivery. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
