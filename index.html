@@ -138,11 +138,13 @@
       padding:12px 0; border-bottom:1px solid var(--gray-l);
     }
     .nav__mob a.btn {
-      border-bottom:none; margin-top:8px;
+      border-bottom:none;
       width:100%; display:flex;
       justify-content:center; text-align:center;
       white-space:normal; box-sizing:border-box;
+      margin-top:0;
     }
+    .nav__sep { height:1px; background:var(--g-light); margin:8px 0 12px; }
 
     /* ─────────────────────────────────────────
        HERO
@@ -176,7 +178,7 @@
     }
     .hero__h1 em { font-style:normal; color:var(--g); }
     .hero__p {
-      font-size:1.1rem; color:var(--gray-m); line-height:1.75;
+      font-size:1.1rem; color:var(--black); line-height:1.75;
       margin-bottom:34px; max-width:460px;
     }
     .hero__btns { display:flex; gap:14px; flex-wrap:wrap; margin-bottom:44px; }
@@ -651,6 +653,7 @@
       <a href="#como-funciona">¿Cómo funciona?</a>
       <a href="#beneficios">Beneficios</a>
       <a href="#planes">Planes</a>
+      <div class="nav__sep"></div>
       <a href="https://dely-coop-production.up.railway.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Registrate en nuestra aplicación</a>
       <a href="repartidores.html" class="btn btn-outline">Soy Repartidor</a>
     </div>
