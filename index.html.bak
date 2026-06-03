@@ -1,17 +1,17 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Delycoop – Cooperativa de Delivery. Conectamos comercios locales con repartidores para entregas rápidas, seguras y sin comisiones abusivas." />
-  <title>Delycoop – Cooperativa de Delivery</title>
+  <meta name="description" content="Delycoop â€“ Cooperativa de Delivery. Conectamos comercios locales con repartidores para entregas rÃ¡pidas, seguras y sin comisiones abusivas." />
+  <title>Delycoop â€“ Cooperativa de Delivery</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
   <style>
-    /* ─────────────────────────────────────────
+    /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
        Variables & Reset
-    ───────────────────────────────────────── */
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     :root {
       --g:          #779C22;
       --g-dark:     #4E6B15;
@@ -38,9 +38,9 @@
     ul { list-style:none; }
     img { max-width:100%; height:auto; display:block; }
 
-    /* ─────────────────────────────────────────
+    /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
        Utilities
-    ───────────────────────────────────────── */
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .container { width:100%; max-width:1200px; margin:0 auto; padding:0 24px; }
 
     .badge-pill {
@@ -84,9 +84,9 @@
     .rv-r{ transform:translateX(28px); }
     .rv.on, .rv-l.on, .rv-r.on { opacity:1; transform:none; }
 
-    /* ─────────────────────────────────────────
+    /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
        NAVBAR
-    ───────────────────────────────────────── */
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .nav {
       position:fixed; top:0; left:0; right:0; z-index:1000;
       background:rgba(255,255,255,.94);
@@ -139,9 +139,9 @@
     }
     .nav__mob .btn { text-align:center; justify-content:center; }
 
-    /* ─────────────────────────────────────────
+    /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
        HERO
-    ───────────────────────────────────────── */
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .hero {
       padding-top:72px; min-height:100vh;
       display:flex; align-items:center;
@@ -254,9 +254,9 @@
       50%{ transform:translateY(-9px) rotate(1deg); }
     }
 
-    /* ─────────────────────────────────────────
+    /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
        MARQUEE
-    ───────────────────────────────────────── */
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .mq-wrap { background:var(--black); padding:36px 0; overflow:hidden; }
     .mq-label {
       text-align:center; color:rgba(255,255,255,.42);
@@ -285,9 +285,9 @@
     }
     .mq-name { color:rgba(255,255,255,.82); font-size:.88rem; font-weight:600; }
 
-    /* ─────────────────────────────────────────
+    /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
        ABOUT
-    ───────────────────────────────────────── */
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .about { padding:96px 0; border-top:6px solid var(--yellow); }
     .about__text { max-width:680px; margin:0 auto; text-align:center; }
     .about__text .about__check { justify-content:center; }
@@ -302,7 +302,7 @@
       font-size:.95rem; color:var(--gray-d); padding:4px 0;
     }
     .about__check::before {
-      content:'✓'; width:22px; height:22px; border-radius:50%;
+      content:'âœ“'; width:22px; height:22px; border-radius:50%;
       background:var(--g-light); color:var(--g-dark);
       display:flex; align-items:center; justify-content:center;
       font-size:.75rem; font-weight:900; flex-shrink:0; line-height:22px; text-align:center;
@@ -324,9 +324,9 @@
     .acard--full .acard__p { color:#fff; }
     .acard--full .acard__p { color:rgba(255,255,255,.88); }
 
-    /* ─────────────────────────────────────────
+    /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
        HOW IT WORKS
-    ───────────────────────────────────────── */
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .how { padding:96px 0; background:#111; }
     .how .badge-pill { background:rgba(255,255,255,.1); color:rgba(255,255,255,.7); }
     .how .sec-title { color:#fff; }
@@ -357,9 +357,9 @@
     .how__step-t { font-size:1.15rem; font-weight:900; color:#fff; margin-bottom:8px; }
     .how__step-p { font-size:.88rem; color:rgba(255,255,255,.55); line-height:1.6; }
 
-    /* ─────────────────────────────────────────
+    /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
        BENEFITS
-    ───────────────────────────────────────── */
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .bene { padding:96px 0; background:#FFFBEE; }
     .bene__body {
       display:grid; grid-template-columns:1.2fr 1fr;
@@ -405,9 +405,9 @@
     .bcard__p { font-size:.85rem; color:var(--gray-m); line-height:1.5; }
     .bene__foot { text-align:center; margin-top:44px; }
 
-    /* ─────────────────────────────────────────
+    /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
        PLANS
-    ───────────────────────────────────────── */
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .plans { padding:96px 0; background:var(--g-xlight); }
     .plans__hd { text-align:center; margin-bottom:10px; }
     .plans__sub {
@@ -448,7 +448,7 @@
     }
     .pcard--feat .pcard__feat { color:rgba(255,255,255,.92); }
     .pcard__feat::before {
-      content:'✓'; width:21px; height:21px; min-width:21px;
+      content:'âœ“'; width:21px; height:21px; min-width:21px;
       background:var(--g-light); color:var(--g-dark);
       border-radius:50%; display:flex; align-items:center; justify-content:center;
       font-size:.72rem; font-weight:900; line-height:21px; text-align:center;
@@ -467,9 +467,9 @@
     .plans__commit p { font-size:.9rem; color:var(--gray-m); line-height:1.65; }
     .plans__commit strong { color:var(--g-dark); }
 
-    /* ─────────────────────────────────────────
+    /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
        TESTIMONIALS
-    ───────────────────────────────────────── */
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .testi { padding:88px 0; background:var(--g-darker); }
     .testi .sec-title { color:#fff; }
     .testi .sec-title span { color:var(--yellow); }
@@ -496,9 +496,9 @@
     .tcard__name { font-size:.88rem; font-weight:800; color:#fff; }
     .tcard__role { font-size:.78rem; color:rgba(255,255,255,.5); }
 
-    /* ─────────────────────────────────────────
+    /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
        CTA FINAL
-    ───────────────────────────────────────── */
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .cta-fin {
       padding:96px 0;
       background:linear-gradient(135deg,var(--g-darker) 0%,var(--g-dark) 50%,var(--g) 100%);
@@ -517,9 +517,9 @@
     .cta-fin__p { font-size:1.05rem; color:rgba(255,255,255,.82); margin-bottom:38px; }
     .cta-fin__btns { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
 
-    /* ─────────────────────────────────────────
+    /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
        FOOTER
-    ───────────────────────────────────────── */
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .footer { background:#0a1f05; padding:60px 0 28px; color:rgba(255,255,255,.65); }
     .footer__grid {
       display:grid; grid-template-columns:2fr 1fr 1fr 1fr;
@@ -551,9 +551,9 @@
     .footer__bottom p { font-size:.8rem; color:rgba(255,255,255,.3); }
     .footer__bottom span { color:var(--g); }
 
-    /* ─────────────────────────────────────────
+    /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
        WhatsApp Float
-    ───────────────────────────────────────── */
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .wa-float {
       position:fixed; bottom:28px; right:28px; z-index:999;
       width:54px; height:54px; border-radius:50%;
@@ -565,9 +565,9 @@
     }
     .wa-float:hover { transform:scale(1.12); box-shadow:0 6px 28px rgba(37,211,102,.62); }
 
-    /* ─────────────────────────────────────────
+    /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
        RESPONSIVE
-    ───────────────────────────────────────── */
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     @media(max-width:1024px){
       .hero__grid { grid-template-columns:1fr; text-align:center; gap:44px; }
       .hero__p { margin-left:auto; margin-right:auto; }
@@ -603,22 +603,22 @@
 </head>
 <body>
 
-<!-- ── WHATSAPP FLOAT ── -->
+<!-- â”€â”€ WHATSAPP FLOAT â”€â”€ -->
 <a href="https://wa.me/5491100000000" class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp"></a>
 
-<!-- ══════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      NAVBAR
-══════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <nav class="nav" id="nav">
   <div class="container">
     <div class="nav__inner">
       <a href="#inicio" class="nav__logo">
-        <img src="imagenes/logo-deycoop.jpeg" alt="Delycoop – Cooperativa de Delivery" />
+        <img src="imagenes/logo-deycoop.jpeg" alt="Delycoop â€“ Cooperativa de Delivery" />
       </a>
       <ul class="nav__links">
         <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#que-es">¿Qué es?</a></li>
-        <li><a href="#como-funciona">¿Cómo funciona?</a></li>
+        <li><a href="#que-es">Â¿QuÃ© es?</a></li>
+        <li><a href="#como-funciona">Â¿CÃ³mo funciona?</a></li>
         <li><a href="#beneficios">Beneficios</a></li>
         <li><a href="#planes">Planes</a></li>
         <li><a href="#repartidores">Repartidores</a></li>
@@ -627,14 +627,14 @@
         <a href="#" class="nav__login">Ingresar</a>
         <a href="#" class="btn btn-primary">Sumar mi Comercio</a>
       </div>
-      <button class="nav__ham" id="ham" aria-label="Menú">
+      <button class="nav__ham" id="ham" aria-label="MenÃº">
         <span></span><span></span><span></span>
       </button>
     </div>
     <div class="nav__mob" id="mob">
       <a href="#inicio">Inicio</a>
-      <a href="#que-es">¿Qué es?</a>
-      <a href="#como-funciona">¿Cómo funciona?</a>
+      <a href="#que-es">Â¿QuÃ© es?</a>
+      <a href="#como-funciona">Â¿CÃ³mo funciona?</a>
       <a href="#beneficios">Beneficios</a>
       <a href="#planes">Planes</a>
       <a href="#" class="btn btn-primary">Sumar mi Comercio</a>
@@ -643,9 +643,9 @@
   </div>
 </nav>
 
-<!-- ══════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      HERO
-══════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section class="hero" id="inicio">
   <div class="container">
     <div class="hero__grid">
@@ -658,7 +658,7 @@
         <p class="hero__p">
           Conectamos comercios locales con repartidores organizados cooperativamente.
           Sin abonos fijos, sin porcentajes, sin intermediarios especulativos.
-          Pagás solo por cada envío realizado.
+          PagÃ¡s solo por cada envÃ­o realizado.
         </p>
         <div class="hero__btns">
           <a href="#" class="btn btn-primary">Sumar mi Comercio</a>
@@ -699,19 +699,19 @@
   </div>
 </section>
 
-<!-- ══════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      MARQUEE NEGOCIOS
-══════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <div class="mq-wrap">
-  <p class="mq-label">+100 Negocios que confían en Delycoop</p>
+  <p class="mq-label">+100 Negocios que confÃ­an en Delycoop</p>
   <div style="overflow:hidden;">
     <div class="mq-track" id="mq"></div>
   </div>
 </div>
 
-<!-- ══════════════════════════════════════
-     ¿QUÉ ES DELYCOOP?
-══════════════════════════════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     Â¿QUÃ‰ ES DELYCOOP?
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section class="about" id="que-es">
   <div class="container">
     <div class="about__text rv">
@@ -734,48 +734,48 @@
   </div>
 </section>
 
-<!-- ══════════════════════════════════════
-     ¿CÓMO FUNCIONA?
-══════════════════════════════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     Â¿CÃ“MO FUNCIONA?
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section class="how" id="como-funciona">
   <div class="container">
     <div class="how__hd rv">
-      <div class="badge-pill">Simple y rápido</div>
-      <h2 class="sec-title">¿Cómo <span>funciona</span>?</h2>
-      <p class="sec-sub">En tres pasos estás operando. Sin vueltas.</p>
+      <div class="badge-pill">Simple y rÃ¡pido</div>
+      <h2 class="sec-title">Â¿CÃ³mo <span>funciona</span>?</h2>
+      <p class="sec-sub">En tres pasos estÃ¡s operando. Sin vueltas.</p>
     </div>
     <div class="how__steps">
       <div class="how__step rv">
         <div class="how__num">1</div>
         <div class="how__step-ico"></div>
         <h3 class="how__step-t">Registrate</h3>
-        <p class="how__step-p">Completá el formulario en minutos. Tu comercio o cuenta de repartidor queda activa ese mismo día.</p>
+        <p class="how__step-p">CompletÃ¡ el formulario en minutos. Tu comercio o cuenta de repartidor queda activa ese mismo dÃ­a.</p>
       </div>
       <div class="how__step rv" style="transition-delay:.15s">
         <div class="how__num">2</div>
         <div class="how__step-ico"></div>
         <h3 class="how__step-t">Conectamos</h3>
-        <p class="how__step-p">Asignamos el pedido al repartidor más cercano según zona y disponibilidad, de forma automática.</p>
+        <p class="how__step-p">Asignamos el pedido al repartidor mÃ¡s cercano segÃºn zona y disponibilidad, de forma automÃ¡tica.</p>
       </div>
       <div class="how__step rv" style="transition-delay:.3s">
         <div class="how__num">3</div>
         <div class="how__step-ico"></div>
         <h3 class="how__step-t">Entregamos</h3>
-        <p class="how__step-p">El producto llega rápido y en perfectas condiciones. Recibís la confirmación al instante.</p>
+        <p class="how__step-p">El producto llega rÃ¡pido y en perfectas condiciones. RecibÃ­s la confirmaciÃ³n al instante.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      BENEFICIOS
-══════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section class="bene" id="beneficios">
   <div class="container">
     <div class="bene__hd rv">
       <div class="badge-pill">Beneficios</div>
-      <h2 class="sec-title">Logística sin <span>complicaciones</span></h2>
-      <p class="sec-sub" style="margin:10px auto 0;">Conocé todo lo que ganás al sumarte a nuestra comunidad.</p>
+      <h2 class="sec-title">LogÃ­stica sin <span>complicaciones</span></h2>
+      <p class="sec-sub" style="margin:10px auto 0;">ConocÃ© todo lo que ganÃ¡s al sumarte a nuestra comunidad.</p>
     </div>
     <div class="bene__body">
       <div class="bene__img rv-l">
@@ -789,17 +789,17 @@
 
     <!-- Panel Comercio -->
     <div class="bpanel active" id="panel-comercio">
-      <div class="bcard rv"><div class="bcard__ico"></div><div><div class="bcard__t">Entregas Rápidas</div><div class="bcard__p">Las entregas más ágiles de la ciudad, con seguro, cobertura y reposición garantizada en caso de inconvenientes.</div></div></div>
-      <div class="bcard rv"><div class="bcard__ico"></div><div><div class="bcard__t">Cero Costos Fijos</div><div class="bcard__p">Pagás solo una tarifa plana por envío. Sin abonos mensuales ni porcentajes sobre tus ventas.</div></div></div>
-      <div class="bcard rv"><div class="bcard__ico"></div><div><div class="bcard__t">Atención Directa</div><div class="bcard__p">Hablás con personas reales. Sin bots, sin call centers. Atención personalizada las 7 días de la semana.</div></div></div>
-      <div class="bcard rv"><div class="bcard__ico"></div><div><div class="bcard__t">Mayor Visibilidad</div><div class="bcard__p">Difusión orgánica en redes sociales y presencia en nuestro directorio público de comercios adheridos.</div></div></div>
+      <div class="bcard rv"><div class="bcard__ico"></div><div><div class="bcard__t">Entregas RÃ¡pidas</div><div class="bcard__p">Las entregas mÃ¡s Ã¡giles de la ciudad, con seguro, cobertura y reposiciÃ³n garantizada en caso de inconvenientes.</div></div></div>
+      <div class="bcard rv"><div class="bcard__ico"></div><div><div class="bcard__t">Cero Costos Fijos</div><div class="bcard__p">PagÃ¡s solo una tarifa plana por envÃ­o. Sin abonos mensuales ni porcentajes sobre tus ventas.</div></div></div>
+      <div class="bcard rv"><div class="bcard__ico"></div><div><div class="bcard__t">AtenciÃ³n Directa</div><div class="bcard__p">HablÃ¡s con personas reales. Sin bots, sin call centers. AtenciÃ³n personalizada las 7 dÃ­as de la semana.</div></div></div>
+      <div class="bcard rv"><div class="bcard__ico"></div><div><div class="bcard__t">Mayor Visibilidad</div><div class="bcard__p">DifusiÃ³n orgÃ¡nica en redes sociales y presencia en nuestro directorio pÃºblico de comercios adheridos.</div></div></div>
     </div>
 
     <!-- Panel Repartidor -->
     <div class="bpanel" id="panel-repartidor">
-      <div class="bcard rv"><div class="bcard__ico"></div><div><div class="bcard__t">Flexibilidad Total</div><div class="bcard__p">Ingresos diarios y liquidados. Elegís cuándo trabajar, por qué zona y cuántas horas por día.</div></div></div>
-      <div class="bcard rv"><div class="bcard__ico"></div><div><div class="bcard__t">Cobertura Social</div><div class="bcard__p">Obra social, aportes jubilatorios y seguro de vida a través del Monotributo Social cooperativo.</div></div></div>
-      <div class="bcard rv"><div class="bcard__ico"></div><div><div class="bcard__t">Red Cooperativa</div><div class="bcard__p">Espacio físico con WiFi, zona de descanso, gomero móvil y una comunidad de compañeros que te respalda.</div></div></div>
+      <div class="bcard rv"><div class="bcard__ico"></div><div><div class="bcard__t">Flexibilidad Total</div><div class="bcard__p">Ingresos diarios y liquidados. ElegÃ­s cuÃ¡ndo trabajar, por quÃ© zona y cuÃ¡ntas horas por dÃ­a.</div></div></div>
+      <div class="bcard rv"><div class="bcard__ico"></div><div><div class="bcard__t">Cobertura Social</div><div class="bcard__p">Obra social, aportes jubilatorios y seguro de vida a travÃ©s del Monotributo Social cooperativo.</div></div></div>
+      <div class="bcard rv"><div class="bcard__ico"></div><div><div class="bcard__t">Red Cooperativa</div><div class="bcard__p">Espacio fÃ­sico con WiFi, zona de descanso, gomero mÃ³vil y una comunidad de compaÃ±eros que te respalda.</div></div></div>
       <div class="bcard rv"><div class="bcard__ico"></div><div><div class="bcard__t">Zonas Claras</div><div class="bcard__p">Rutas organizadas, trato directo con comercios de confianza y sin competencia desleal de algoritmos.</div></div></div>
     </div>
 
@@ -809,28 +809,28 @@
   </div>
 </section>
 
-<!-- ══════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      PLANES
-══════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section class="plans" id="planes">
   <div class="container">
     <div class="plans__hd rv">
       <div class="badge-pill">Sin sorpresas</div>
-      <h2 class="sec-title">Planes <span>diseñados para vos</span></h2>
+      <h2 class="sec-title">Planes <span>diseÃ±ados para vos</span></h2>
     </div>
     <p class="plans__sub rv">
-      Elegí la modalidad que mejor se adapte a tu volumen operativo.
-      En ambos casos pagás <strong>únicamente</strong> por los envíos realizados.
+      ElegÃ­ la modalidad que mejor se adapte a tu volumen operativo.
+      En ambos casos pagÃ¡s <strong>Ãºnicamente</strong> por los envÃ­os realizados.
     </p>
     <div class="plans__grid">
       <div class="pcard rv">
         <div class="pcard__ico"></div>
         <h3 class="pcard__t">Prepago</h3>
-        <p class="pcard__p">Cargás saldo en tu cuenta y se descuenta automáticamente con cada envío. Control total al instante de tu presupuesto.</p>
+        <p class="pcard__p">CargÃ¡s saldo en tu cuenta y se descuenta automÃ¡ticamente con cada envÃ­o. Control total al instante de tu presupuesto.</p>
         <ul class="pcard__feats">
-          <li class="pcard__feat">Recargas fáciles e inmediatas</li>
+          <li class="pcard__feat">Recargas fÃ¡ciles e inmediatas</li>
           <li class="pcard__feat">Control exacto de gastos en tiempo real</li>
-          <li class="pcard__feat">Sin montos mínimos obligatorios</li>
+          <li class="pcard__feat">Sin montos mÃ­nimos obligatorios</li>
           <li class="pcard__feat">Panel de seguimiento de pedidos</li>
         </ul>
         <a href="#" class="btn btn-outline">Empezar ahora</a>
@@ -838,12 +838,12 @@
       <div class="pcard pcard--feat rv" style="transition-delay:.15s">
         <div class="pcard__ico"></div>
         <h3 class="pcard__t">Pospago</h3>
-        <p class="pcard__p">Despachás sin interrupciones y abonás el total de forma periódica. Ideal para comercios con alto volumen diario.</p>
+        <p class="pcard__p">DespachÃ¡s sin interrupciones y abonÃ¡s el total de forma periÃ³dica. Ideal para comercios con alto volumen diario.</p>
         <ul class="pcard__feats">
-          <li class="pcard__feat">Máxima agilidad en tu operativa</li>
-          <li class="pcard__feat">Liquidación semanal o quincenal</li>
-          <li class="pcard__feat">Resumen detallado de todos tus envíos</li>
-          <li class="pcard__feat">Atención prioritaria dedicada</li>
+          <li class="pcard__feat">MÃ¡xima agilidad en tu operativa</li>
+          <li class="pcard__feat">LiquidaciÃ³n semanal o quincenal</li>
+          <li class="pcard__feat">Resumen detallado de todos tus envÃ­os</li>
+          <li class="pcard__feat">AtenciÃ³n prioritaria dedicada</li>
         </ul>
         <a href="#" class="btn btn-white">Quiero este plan</a>
       </div>
@@ -853,15 +853,15 @@
       <p>
         Elijas la modalidad que elijas, <strong>NUNCA</strong> te cobraremos abonos fijos,
         porcentajes sobre tus ventas ni comisiones ocultas.
-        Nuestro negocio es el envío, y <strong>solo pagás cuando lo utilizás</strong>.
+        Nuestro negocio es el envÃ­o, y <strong>solo pagÃ¡s cuando lo utilizÃ¡s</strong>.
       </p>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      TESTIMONIOS
-══════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section class="testi" id="testimonios">
   <div class="container">
     <div class="testi__hd rv">
@@ -870,19 +870,19 @@
     </div>
     <div class="testi__grid">
       <div class="tcard rv">
-        <div class="tcard__stars">★★★★★</div>
+        <div class="tcard__stars">â˜…â˜…â˜…â˜…â˜…</div>
         <p class="tcard__q">"Desde que sumamos Delycoop, triplicamos las entregas sin contratar personal propio. Los precios son honestos y el servicio, impecable."</p>
         <div class="tcard__auth">
           <div class="tcard__av" style="background:var(--g);">MA</div>
           <div>
             <div class="tcard__name">Marcela A.</div>
-            <div class="tcard__role">Panadería La Esperanza</div>
+            <div class="tcard__role">PanaderÃ­a La Esperanza</div>
           </div>
         </div>
       </div>
       <div class="tcard rv" style="transition-delay:.15s">
-        <div class="tcard__stars">★★★★★</div>
-        <p class="tcard__q">"Después de años repartiendo para plataformas de afuera, en Delycoop tengo obra social y certeza de ingreso diario. La mejor decisión."</p>
+        <div class="tcard__stars">â˜…â˜…â˜…â˜…â˜…</div>
+        <p class="tcard__q">"DespuÃ©s de aÃ±os repartiendo para plataformas de afuera, en Delycoop tengo obra social y certeza de ingreso diario. La mejor decisiÃ³n."</p>
         <div class="tcard__auth">
           <div class="tcard__av" style="background:var(--g-dark);">LG</div>
           <div>
@@ -892,13 +892,13 @@
         </div>
       </div>
       <div class="tcard rv" style="transition-delay:.3s">
-        <div class="tcard__stars">★★★★★</div>
-        <p class="tcard__q">"Aumentamos ventas al delivery sin pagar comisiones abusivas. La atención es directa y los tiempos sorprenden gratamente a nuestros clientes."</p>
+        <div class="tcard__stars">â˜…â˜…â˜…â˜…â˜…</div>
+        <p class="tcard__q">"Aumentamos ventas al delivery sin pagar comisiones abusivas. La atenciÃ³n es directa y los tiempos sorprenden gratamente a nuestros clientes."</p>
         <div class="tcard__auth">
           <div class="tcard__av" style="background:#e67e22;">FR</div>
           <div>
             <div class="tcard__name">Fernando R.</div>
-            <div class="tcard__role">Rotisería Don Felipe</div>
+            <div class="tcard__role">RotiserÃ­a Don Felipe</div>
           </div>
         </div>
       </div>
@@ -906,14 +906,14 @@
   </div>
 </section>
 
-<!-- ══════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      CTA FINAL
-══════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section class="cta-fin" id="repartidores">
   <div class="container">
     <div class="cta-fin__inner rv">
-      <h2 class="cta-fin__t">Líderes en logística cooperativa.<br>Sumate hoy.</h2>
-      <p class="cta-fin__p">Rápido, eficiente y justo para todos. Unite a la comunidad Delycoop.</p>
+      <h2 class="cta-fin__t">LÃ­deres en logÃ­stica cooperativa.<br>Sumate hoy.</h2>
+      <p class="cta-fin__p">RÃ¡pido, eficiente y justo para todos. Unite a la comunidad Delycoop.</p>
       <div class="cta-fin__btns">
         <a href="#" class="btn btn-white">Soy un Comercio</a>
         <a href="#" class="btn btn-outline-w">Soy un Repartidor</a>
@@ -922,9 +922,9 @@
   </div>
 </section>
 
-<!-- ══════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      FOOTER
-══════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <footer class="footer">
   <div class="container">
     <div class="footer__grid">
@@ -942,13 +942,13 @@
         <h4 class="footer__col-t">Delycoop</h4>
         <ul class="footer__links">
           <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#que-es">¿Qué es?</a></li>
-          <li><a href="#como-funciona">¿Cómo funciona?</a></li>
+          <li><a href="#que-es">Â¿QuÃ© es?</a></li>
+          <li><a href="#como-funciona">Â¿CÃ³mo funciona?</a></li>
           <li><a href="#planes">Planes</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="footer__col-t">Únete</h4>
+        <h4 class="footer__col-t">Ãšnete</h4>
         <ul class="footer__links">
           <li><a href="#">Sumar mi Comercio</a></li>
           <li><a href="#">Quiero Repartir</a></li>
@@ -959,31 +959,31 @@
       <div>
         <h4 class="footer__col-t">Legal</h4>
         <ul class="footer__links">
-          <li><a href="#">Términos y condiciones</a></li>
-          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">TÃ©rminos y condiciones</a></li>
+          <li><a href="#">PolÃ­tica de privacidad</a></li>
           <li><a href="#">Preguntas frecuentes</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>
       </div>
     </div>
     <div class="footer__bottom">
-      <p>© 2026 <span>Delycoop</span> – Cooperativa de Delivery. Todos los derechos reservados.</p>
-      <p>Hecho con <span>♥</span> en Argentina</p>
+      <p>Â© 2026 <span>Delycoop</span> â€“ Cooperativa de Delivery. Todos los derechos reservados.</p>
+      <p>Hecho con <span>â™¥</span> en Argentina</p>
     </div>
   </div>
 </footer>
 
-<!-- ══════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      JAVASCRIPT
-══════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <script>
-  /* ── Navbar scroll shadow ── */
+  /* â”€â”€ Navbar scroll shadow â”€â”€ */
   const nav = document.getElementById('nav');
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 20);
   });
 
-  /* ── Mobile menu ── */
+  /* â”€â”€ Mobile menu â”€â”€ */
   const ham = document.getElementById('ham');
   const mob = document.getElementById('mob');
   ham.addEventListener('click', () => {
@@ -995,7 +995,7 @@
     mob.classList.remove('open');
   }));
 
-  /* ── Smooth scroll for anchor links ── */
+  /* â”€â”€ Smooth scroll for anchor links â”€â”€ */
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
       const href = a.getAttribute('href');
@@ -1006,13 +1006,13 @@
     });
   });
 
-  /* ── Scroll reveal ── */
+  /* â”€â”€ Scroll reveal â”€â”€ */
   const revObs = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); });
   }, { threshold: 0.1 });
   document.querySelectorAll('.rv, .rv-l, .rv-r').forEach(el => revObs.observe(el));
 
-  /* ── Counter animation ── */
+  /* â”€â”€ Counter animation â”€â”€ */
   const ctrObs = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting && !e.target.dataset.done) {
@@ -1030,7 +1030,7 @@
   }, { threshold: 0.5 });
   document.querySelectorAll('.ctr').forEach(el => ctrObs.observe(el));
 
-  /* ── Benefits tabs ── */
+  /* â”€â”€ Benefits tabs â”€â”€ */
   document.querySelectorAll('.btab').forEach(tab => {
     tab.addEventListener('click', () => {
       document.querySelectorAll('.btab').forEach(t => t.classList.remove('active'));
@@ -1043,24 +1043,24 @@
     });
   });
 
-  /* ── Marquee – generate items ── */
+  /* â”€â”€ Marquee â€“ generate items â”€â”€ */
   const shops = [
     { n:'La Chimera',    c:'#e74c3c', i:'LC' },
     { n:'Burger Bros',   c:'#e67e22', i:'BB' },
     { n:'Sushi Nori',    c:'#27ae60', i:'SN' },
-    { n:'Panadería Sol', c:'#f39c12', i:'PS' },
+    { n:'PanaderÃ­a Sol', c:'#f39c12', i:'PS' },
     { n:'Pizza Express', c:'#c0392b', i:'PE' },
     { n:'Verde Natura',  c:'#2ecc71', i:'VN' },
-    { n:'El Rincón',     c:'#8e44ad', i:'ER' },
+    { n:'El RincÃ³n',     c:'#8e44ad', i:'ER' },
     { n:'Tacos & Co',    c:'#d35400', i:'TC' },
-    { n:'Heladería Roma',c:'#2980b9', i:'HR' },
+    { n:'HeladerÃ­a Roma',c:'#2980b9', i:'HR' },
     { n:'Don Felipe',    c:'#c0392b', i:'DF' },
-    { n:'Saboré',        c:'#27ae60', i:'SA' },
+    { n:'SaborÃ©',        c:'#27ae60', i:'SA' },
     { n:'La Casona',     c:'#7f8c8d', i:'LC' },
     { n:'Empanadas MJ',  c:'#e74c3c', i:'EM' },
     { n:'Wok Oriental',  c:'#e67e22', i:'WO' },
-    { n:'Café Central',  c:'#795548', i:'CC' },
-    { n:'Almacén Bio',   c:'#27ae60', i:'AB' },
+    { n:'CafÃ© Central',  c:'#795548', i:'CC' },
+    { n:'AlmacÃ©n Bio',   c:'#27ae60', i:'AB' },
   ];
   const mq = document.getElementById('mq');
   [...shops, ...shops].forEach(s => {
