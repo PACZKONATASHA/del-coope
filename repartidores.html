@@ -179,14 +179,25 @@
     .btn-primary:hover { background:var(--g-dark); transform:translateY(-2px); box-shadow:0 6px 22px rgba(119,156,34,.42); }
 
     /* ── FOOTER ── */
-    .footer { background:var(--black); padding:28px 0; }
-    .footer__inner {
-      display:flex; align-items:center; justify-content:space-between;
-      flex-wrap:wrap; gap:12px;
+    .footer { background:var(--black); padding:60px 0 28px; color:rgba(255,255,255,.65); }
+    .footer__grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:44px; margin-bottom:44px; }
+    .footer__logo { height:54px; margin-bottom:14px; display:block; }
+    .footer__desc { font-size:.86rem; line-height:1.65; color:rgba(255,255,255,.46); max-width:250px; }
+    .footer__social { display:flex; gap:10px; margin-top:20px; }
+    .footer__social a {
+      width:38px; height:38px; border-radius:50%;
+      background:rgba(255,255,255,.09);
+      display:flex; align-items:center; justify-content:center;
+      font-size:1rem; transition:var(--ease);
     }
-    .footer__logo img { height:40px; }
-    .footer p { font-size:.8rem; color:rgba(255,255,255,.35); }
-    .footer span { color:var(--g); }
+    .footer__social a:hover { background:var(--g); transform:translateY(-2px); }
+    .footer__col-t { font-size:.78rem; font-weight:900; text-transform:uppercase; letter-spacing:.1em; color:#fff; margin-bottom:14px; }
+    .footer__links { display:flex; flex-direction:column; gap:9px; list-style:none; padding:0; margin:0; }
+    .footer__links a { font-size:.86rem; color:rgba(255,255,255,.5); transition:var(--ease); }
+    .footer__links a:hover { color:var(--g); }
+    .footer__bottom { border-top:1px solid rgba(255,255,255,.07); padding-top:24px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; }
+    .footer__bottom p { font-size:.8rem; color:rgba(255,255,255,.3); }
+    .footer__bottom span { color:var(--g); }
 
     /* ── RESPONSIVE ── */
     @media(max-width:768px) {
@@ -196,6 +207,11 @@
       .form-block { padding:24px 20px; }
       .form-submit { padding:24px 20px; }
       .upload-grid { grid-template-columns:1fr 1fr; }
+      .footer__grid { grid-template-columns:1fr 1fr; gap:28px; }
+    }
+    @media(max-width:600px) {
+      .footer__grid { grid-template-columns:1fr; }
+      .footer__bottom { flex-direction:column; text-align:center; }
     }
     @media(max-width:480px) {
       .strip__grid { grid-template-columns:1fr; }
@@ -372,12 +388,48 @@
 
 <!-- FOOTER -->
 <footer class="footer">
-  <div class="container container--wide">
-    <div class="footer__inner">
-      <a href="index.html" class="footer__logo">
-        <img src="imagenes/logo-sin-fondo.png" alt="Delycoop" />
-      </a>
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <img src="imagenes/logo-sin-fondo.png" alt="Delycoop" class="footer__logo" />
+        <p class="footer__desc">Llevamos tus pedidos a la puerta de tus clientes. Cuidamos cada entrega porque valoramos a quienes la hacen posible.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook"></a>
+          <a href="#" aria-label="Instagram"></a>
+          <a href="#" aria-label="WhatsApp"></a>
+          <a href="#" aria-label="TikTok"></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer__col-t">Delycoop</h4>
+        <ul class="footer__links">
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="index.html#que-es">¿Qué es?</a></li>
+          <li><a href="index.html#como-funciona">¿Cómo funciona?</a></li>
+          <li><a href="index.html#planes">Planes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__col-t">Ú nete</h4>
+        <ul class="footer__links">
+          <li><a href="comercios.html">Sumar mi Comercio</a></li>
+          <li><a href="repartidores.html">Quiero Repartir</a></li>
+          <li><a href="#">Comercios Adheridos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__col-t">Legal</h4>
+        <ul class="footer__links">
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Preguntas frecuentes</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
       <p>© 2026 <span>Delycoop</span> – Cooperativa de Delivery. Todos los derechos reservados.</p>
+      <p>Hecho con <span>♥</span> en Argentina</p>
     </div>
   </div>
 </footer>
