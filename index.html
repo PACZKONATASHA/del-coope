@@ -218,8 +218,10 @@
       transform-origin:center bottom;
     }
     @keyframes kart-enter {
-      from { opacity:0; transform:translateX(70px) rotate(8deg) scale(.82); }
-      to   { opacity:1; transform:translateX(0)    rotate(0deg)  scale(1);  }
+      0%   { opacity:0; transform:translateX(60px) rotate(-300deg) scale(0.6); }
+      65%  { opacity:1; transform:translateX(-8px) rotate(10deg)   scale(1.05); }
+      82%  {            transform:translateX(3px)  rotate(-3deg)   scale(0.98); }
+      100% { opacity:1; transform:translateX(0)    rotate(0deg)    scale(1); }
     }
     @keyframes kart-drive {
       0%   { transform:translateY(0)    rotate(-1.5deg) scale(1);    }
@@ -362,6 +364,17 @@
       border-radius:50%; display:flex; align-items:center; justify-content:center;
       font-size:1.6rem; font-weight:900; margin:0 auto 16px;
     }
+    @keyframes num-pop {
+      0%   { transform: scale(0);    opacity: 0; }
+      55%  { transform: scale(1.35); opacity: 1; }
+      78%  { transform: scale(0.86); }
+      100% { transform: scale(1);    opacity: 1; }
+    }
+    .how__step.on .how__num {
+      animation: num-pop .55s cubic-bezier(.36,.07,.19,.97) both;
+    }
+    .how__step.rv:nth-child(2).on .how__num { animation-delay: .18s; }
+    .how__step.rv:nth-child(3).on .how__num { animation-delay: .35s; }
     .how__step-ico { font-size:2rem; margin-bottom:12px; }
     .how__step-t { font-size:1.15rem; font-weight:900; color:#fff; margin-bottom:8px; }
     .how__step-p { font-size:.88rem; color:rgba(255,255,255,.55); line-height:1.6; }
@@ -407,7 +420,7 @@
     .bcard:hover { border-color:var(--g); box-shadow:var(--sh-md); transform:translateX(4px); }
     .bcard__ico {
       width:50px; height:50px; min-width:50px;
-      background:var(--g-light); border-radius:var(--r-sm);
+      background:var(--g); border-radius:var(--r-sm);
       display:flex; align-items:center; justify-content:center; font-size:1.4rem;
     }
     .bcard__t { font-size:.97rem; font-weight:800; color:var(--black); margin-bottom:5px; }
